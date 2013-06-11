@@ -1,4 +1,4 @@
-module Resque
+module ResqueSlidingWindow
   class WindowSlider
     attr_accessor :klass
     attr_accessor :args
