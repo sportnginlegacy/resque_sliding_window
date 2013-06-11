@@ -1,9 +1,11 @@
 module ResqueSlidingWindow
   class WindowSlider
+    extend Forwardable
+
     attr_accessor :klass
     attr_accessor :args
 
-    delegate :remove_delayed_job_from_timestamp, :job_to_hash, :encode, :redis, to: :Resque
+    def_delegators :Resque, :job_to_hash, :encode, :redis, :remove_delayed_job_from_timestamp
 
     def initialize(klass, args)
       self.klass = klass
