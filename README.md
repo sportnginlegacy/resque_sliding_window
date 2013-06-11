@@ -20,6 +20,16 @@ $ bundle
 
 ## Usage
 
+You might have a glance at the [resque-scheduler](https://github.com/jonhyman/resque-scheduler) gem.
+You need to setup a worker. To run one manually, simply:
+
+```ruby
+rake resque:scheduler
+```
+
+But again, see the [resque-scheduler](https://github.com/jonhyman/resque-scheduler) gem as there
+is some setup for the rake task.
+
 ```ruby
 module Jobs
   class Publish
