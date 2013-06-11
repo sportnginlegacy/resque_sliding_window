@@ -1,4 +1,5 @@
 # ResqueSlidingWindow
+[![Gem Version](https://badge.fury.io/rb/resque_sliding_window.png)](http://badge.fury.io/rb/resque_sliding_window)
 
 Want a sliding window for debouncing bursty Resque events? Here it is.
 
