@@ -18,7 +18,7 @@ And then execute:
 $ bundle
 ```
 
-## Usage
+## Setup
 
 You might have a glance at the [resque-scheduler](https://github.com/jonhyman/resque-scheduler) gem.
 You need to setup a worker. To run one manually, simply:
@@ -29,6 +29,8 @@ rake resque:scheduler
 
 But again, see the [resque-scheduler](https://github.com/jonhyman/resque-scheduler) gem as there
 is some setup for the rake task.
+
+## Usage
 
 ```ruby
 module Jobs
