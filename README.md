@@ -23,7 +23,7 @@ $ bundle
 You might have a glance at the [resque-scheduler](https://github.com/jonhyman/resque-scheduler) gem.
 You need to setup a worker. To run one manually, simply:
 
-```ruby
+```bash
 rake resque:scheduler
 ```
 
