@@ -36,6 +36,27 @@ it will be deleted in favor of the new 30-second job. However, it can only be
 pushed off for a 1m 30s from its initial queue-time before it force runs one. When it forces
 one through, others will not be run.
 
+Default `max_time` is 1m and 30s. To change this:
+
+```ruby
+module Jobs
+  class Publish
+    include Resque::Plugins::SlidingWindow
+
+    @queue = :low
+
+    def self.max_time
+      30.minutes
+    end
+
+    def self.perform(id)
+      # Crazy stuff
+    end
+  end
+end
+```
+
+
 ## Contributing
 
 1. Fork it
