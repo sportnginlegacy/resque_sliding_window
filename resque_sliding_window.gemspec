@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = ResqueSlidingWindow::VERSION
   spec.authors       = ["Jon Phenow"]
   spec.email         = ["j.phenow@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{Sliding Window unique-job workflow for Resque jobs}
+  spec.summary       = %q{Sliding Window unique-job workflow for Resque jobs}
+  spec.homepage      = "https://github.com/sportngin/resque_sliding_window"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
