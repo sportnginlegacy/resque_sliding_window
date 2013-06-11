@@ -6,12 +6,16 @@ Want a sliding window for debouncing bursty Resque events? Here it is.
 
 Add this line to your application's Gemfile:
 
-    gem 'resque_sliding_window'
-    gem 'resque-scheduler', require: 'resque_scheduler', git: "https://github.com/jonhyman/resque-scheduler.git" # prefered repo
+```ruby
+gem 'resque_sliding_window'
+gem 'resque-scheduler', require: 'resque_scheduler', git: "https://github.com/jonhyman/resque-scheduler.git" # prefered repo
+```
 
 And then execute:
 
-    $ bundle
+```bash
+$ bundle
+```
 
 ## Usage
 
