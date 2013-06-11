@@ -1,5 +1,4 @@
 require "resque_sliding_window/version"
-
-module ResqueSlidingWindow
-  # Your code goes here...
-end
+require "resque_sliding_window/window_slider"
+require "resque_sliding_window/resque_extensions"
+require "resque/plugins/sliding_window"
