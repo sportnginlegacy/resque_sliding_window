@@ -22,7 +22,7 @@ $ bundle
 ```ruby
 module Jobs
   class Publish
-    include Resque::Plugins::SlidingWindow
+    extend Resque::Plugins::SlidingWindow
 
     @queue = :low
 
@@ -45,7 +45,7 @@ Default `max_time` is 1m and 30s. To change this:
 ```ruby
 module Jobs
   class Publish
-    include Resque::Plugins::SlidingWindow
+    extend Resque::Plugins::SlidingWindow
 
     @queue = :low
 
