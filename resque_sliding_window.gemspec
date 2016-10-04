@@ -22,4 +22,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake"
 
   spec.add_dependency 'resque', '~> 1.21'
+  spec.add_dependency 'resque-scheduler', '~> 4.3'
 end
